@@ -1,9 +1,10 @@
 .App {
   text-align: center;
+  scroll-snap-align: start none;
 }
 
 .App-logo {
-  height: 20vmin;
+  height: 10vmin;
 }
 
 .App-header {
@@ -17,7 +18,61 @@
   color: white;
 }
 
-.App-link {
-  color: #E0CA3C;
+.App-header h2 {
+  font-weight: 300;
 }
 
+.docScroller {
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 100% 0%;
+}
+
+.inside {
+  /*display: table;*/
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*padding: 0 3em;*/
+}
+
+.iconImage {
+  height: 20vmin;
+}
+
+.hungry {
+  display: block;
+  height: 100vh;
+  background: #434371;
+  scroll-snap-align: start none;
+}
+
+.stepOne {
+  display: block;
+  height: 100vh;
+  background: #E0CA3C;
+  scroll-snap-align: start none;
+}
+
+.stepOne-image {
+  height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stepTwo {
+  display: block;
+  height: 100vh;
+  background: #f3c4b3;
+  scroll-snap-align: start none;
+}
