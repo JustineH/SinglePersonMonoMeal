@@ -4,7 +4,7 @@
 }
 
 .App-logo {
-  height: 10vmin;
+  height: 20vmin;
 }
 
 .App-header {
@@ -18,7 +18,8 @@
   color: white;
 }
 
-.App-header h2 {
+.App-header h1 {
+  font-size: 2.1em;
   font-weight: 300;
 }
 
@@ -26,34 +27,61 @@
   overflow-x: hidden;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   overflow: auto;
-  scroll-snap-points-y: repeat(100%);
-  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
   scroll-snap-destination: 100% 0%;
 }
 
+.docScroller::-webkit-scrollbar {
+  display: none;
+}
+
 .inside {
-  /*display: table;*/
   height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /*padding: 0 3em;*/
 }
 
 .iconImage {
-  height: 20vmin;
+  height: 25vmin;
+  padding-top: 30px;
 }
 
 .hungry {
   display: block;
   height: 100vh;
-  background: #434371;
+  background: #f3c4b3;
   scroll-snap-align: start none;
+}
+
+.hungry h1 {
+  margin-bottom: 45px;
+}
+
+.hungry .iconImage {
+  padding-top: 10px;
+}
+
+.stepOne .iconImage {
+  height: 28vmin;
+  padding-top: 0;
+}
+
+.stepTwo .iconImage {
+  height: 30vmin;
+}
+
+.stepFour .iconImage {
+  padding-top: 40px;
+}
+
+.stepFive .iconImage {
+  height: 28vmin;
+  padding-top: 10px;
 }
 
 .stepOne {
@@ -63,16 +91,79 @@
   scroll-snap-align: start none;
 }
 
-.stepOne-image {
-  height: 30vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .stepTwo {
   display: block;
   height: 100vh;
   background: #f3c4b3;
   scroll-snap-align: start none;
 }
+
+.stepThree {
+  display: block;
+  height: 100vh;
+  background: #E0CA3C;
+  scroll-snap-align: start none;
+}
+
+.stepThree .inside {
+  padding: 0 30px;
+}
+
+.stepFour {
+  display: block;
+  height: 100vh;
+  background: #f3c4b3;
+  scroll-snap-align: start none;
+}
+
+.stepFive{
+  display: block;
+  height: 100vh;
+  background: #04A777;
+  scroll-snap-align: start none;
+}
+
+.stepSix{
+  display: block;
+  height: 100vh;
+  background: #f3c4b3;
+  scroll-snap-align: start none;
+}
+
+@media only screen and (max-width: 768px) {
+  .App-logo {
+    height: 25vmin;
+  }
+
+  .App-header {
+    padding: 0 3em;
+  }
+
+  .docScroller {
+    width: 800vw;
+    scroll-snap-type: x mandatory;
+  }
+
+  .MuiGrid-item-2 {
+    width: 100vw;
+    float: left;
+  }
+
+  .hungry .iconImage {
+    height: 28vmin;
+  }
+
+  .stepOne .iconImage {
+    height: 32vmin;
+  }
+
+  .stepTwo .iconImage {
+    height: 34vmin;
+  }
+
+  .stepFive .iconImage {
+    height: 30vmin;
+  }
+
+}
+
