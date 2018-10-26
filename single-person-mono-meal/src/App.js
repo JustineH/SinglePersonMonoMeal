@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import imageCerealAndMilk from './cereal-and-milk.svg'; 
 import imageHungry from './noun_hungry_1926312.svg';
 import imageBowl from './noun_Bowl_1460102.svg';
-import imageCerealBox from './noun_Cereal Box Open_434709.svg';
+import imageCerealBox from './noun_Cereal_Box_Open_434709.svg';
 import imageMilk from './milk-bottle.svg';
 import imageSpoon from './noun_Spoon_1825509.svg';
 import imageCerealAndBowl from './cereal-and-bowl.svg';
