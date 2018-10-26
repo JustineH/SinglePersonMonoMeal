@@ -7,10 +7,26 @@ body {
 }
 
 h1 {
-  font-weight: 300;
+  font-size: 2.5em;
+  font-weight: 500;
   color: white;
-  display: table-cell;
+  display: block;
   width: 100%;
   vertical-align: middle;
   text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+  color: white;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.1em;
+  }
 }
