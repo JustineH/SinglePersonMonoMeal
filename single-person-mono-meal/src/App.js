@@ -22,7 +22,10 @@ class App extends Component {
       let scrollTop = event.target.scrollTop
       let images = document.querySelectorAll("img")
       images.forEach((image) => {
-        image.style.transform = `rotateZ(${scrollTop/10 % 3}deg)`
+        // let num = `rotateZ(${scrollTop/10 % 100}deg)`
+        if (scrollTop > 1000) {
+          image.style.transform = `rotateZ(${(scrollTop - 1000)/6}deg)`
+        }
       })
       console.log(scrollTop)
       console.log(images)
@@ -86,7 +89,7 @@ class App extends Component {
                 Step Three: 
               </h1>
               <h2>
-                Grab a box of your favourite cereal
+                Grab a box of your favourite cereal and pour into bowl
               </h2>
               <img src={imageCerealBox} className="iconImage" />
             </div>
@@ -99,7 +102,7 @@ class App extends Component {
                 Step Four: 
               </h1>
               <h2>
-                Pour milk onto cereal
+                Grab milk from fridge and pour onto cereal
               </h2>
               <img src={imageMilk} className="iconImage" />
             </div>
@@ -125,7 +128,7 @@ class App extends Component {
                 Step Six:
               </h1>
               <h2>
-                See Step One
+                Still hungry? See Step One
               </h2>
               <img src={imageHappy} className="iconImage" />
             </div>
