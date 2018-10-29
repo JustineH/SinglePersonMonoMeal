@@ -9,10 +9,8 @@ import imageBowl from './noun_Bowl_1460102.svg';
 import imageCerealBox from './noun_Cereal_Box_Open_434709.svg';
 import imageMilk from './milk-bottle.svg';
 import imageSpoon from './noun_Spoon_1825509.svg';
-import imageCerealAndBowl from './cereal-and-bowl.svg';
 import imageEat from './noun_porridge_1997682.svg';
 import imageHappy from './noun_jump_1682137.svg';
-import Button from '@material-ui/core/Button';
 
 class App extends Component {
 
