@@ -20,7 +20,6 @@ class App extends Component {
       let scrollTop = event.target.scrollTop
       let images = document.querySelectorAll("img")
       images.forEach((image) => {
-        // let num = `rotateZ(${scrollTop/10 % 100}deg)`
         if (scrollTop > 1000) {
           image.style.transform = `rotateZ(${(scrollTop - 1000)/6}deg)`
         }

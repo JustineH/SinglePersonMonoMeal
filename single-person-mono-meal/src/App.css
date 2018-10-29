@@ -51,11 +51,14 @@
   padding-top: 30px;
 }
 
-.hungry {
+.hungry, .stepOne, .stepTwo, .stepThree, .stepFour, .stepFive, .stepSix {
   display: block;
   height: 100vh;
-  background: #f3c4b3;
   scroll-snap-align: start none;
+}
+
+.hungry {
+  background: #f3c4b3;
 }
 
 .hungry h1 {
@@ -85,24 +88,15 @@
 }
 
 .stepOne {
-  display: block;
-  height: 100vh;
   background: #E0CA3C;
-  scroll-snap-align: start none;
 }
 
 .stepTwo {
-  display: block;
-  height: 100vh;
   background: #f3c4b3;
-  scroll-snap-align: start none;
 }
 
 .stepThree {
-  display: block;
-  height: 100vh;
   background: #E0CA3C;
-  scroll-snap-align: start none;
 }
 
 .stepThree .inside {
@@ -110,24 +104,15 @@
 }
 
 .stepFour {
-  display: block;
-  height: 100vh;
   background: #f3c4b3;
-  scroll-snap-align: start none;
 }
 
 .stepFive{
-  display: block;
-  height: 100vh;
   background: #04A777;
-  scroll-snap-align: start none;
 }
 
 .stepSix{
-  display: block;
-  height: 100vh;
   background: #f3c4b3;
-  scroll-snap-align: start none;
 }
 
 @media only screen and (max-width: 768px) {
